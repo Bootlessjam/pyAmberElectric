@@ -1,10 +1,10 @@
 # AmberElectric
 
-Make it easier to use Amber's newer API that uses AWS for authentication.
+Make it easier to use Amber's newer API that uses AWS Cognito for authentication.
 
 Specify your login creds, and optionally how long to leave between refeshing the data in seconds. The default is equal to 5 minutes.
 
-You can get the entire response from Amber with the json property, or cut out the middleman and get specific values like currentPrice. Data is stored locally so feel free to grab
+You can get the entire response from Amber with the json property, or cut out the middleman and get specific values like currentPrice. Data is stored locally so feel free to grab the properties without hammering Amber's servers or being stuck with stale data.
 
 # How-to
 
@@ -51,7 +51,7 @@ Returns the total usage for the last 30 days in Kwh.
 #### periodRenewable
 Returns the average percentage of renewables in the grid for the last 30 days.
 
-# Secret Methods
+## Secret Methods
 You shouldn't need to call these methods but they are there if you really want/need them.
 
 #### auth()
