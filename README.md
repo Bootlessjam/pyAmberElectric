@@ -1,4 +1,4 @@
-# AmberElectric
+# pyAmberElectric
 
 Make it easier to use Amber's newer API that uses AWS Cognito for authentication.
 
@@ -7,6 +7,8 @@ Specify your login creds, and optionally how long to leave between refeshing the
 You can get the entire response from Amber with the json property, or cut out the middleman and get specific values like currentPrice. Data is stored locally so feel free to grab the properties without hammering Amber's servers or being stuck with stale data.
 
 # How-to
+
+Install with `pip3 install pyAmberElectric` as you might expect.
 
 ```python
 from pyAmberElectric import pyAmberElectric
