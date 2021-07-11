@@ -12,9 +12,9 @@ Install with `pip3 install pyAmberElectric` as you might expect.
 
 ```python
 from pyAmberElectric import pyAmberElectric
-Amber = pyAmberElectric(username='yourEmail', password='yourPassword', updateInterval=600)
+Amber = pyAmberElectric(username='yourEmail', password='yourPassword', maxAge=300)
 
-#array of your meter prices
+#array of your meter prices, usually [ centsperkwh, solarfeedin ]
 Amber.currentPrice
 
 #the complete raw json data
